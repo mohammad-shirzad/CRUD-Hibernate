@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <aop:aspectj-autoproxy/>
+
+    <bean id="job" class="core.model.dto.JobInfo"/>
+    <bean id="education" class="core.model.dto.EducationInfo"/>
+    <bean id="contact" class="core.model.dto.ContactInfo"/>
+    <bean id="person" class="core.model.dto.Person"/>
+    <bean id="personRepository" class="core.designPattern.repository.person.PersonRepository"/>
+    <bean id="personDao" class="core.model.dao.PersonDao" />
+    <bean id="educationDao" class="core.model.dao.EducationDao" />
+    <bean id="jobDao" class="core.model.dao.JobDao" />
+    <bean id="contactDao" class="core.model.dao.ContactDao" />
+    <bean id="log" class="aspect.LoggingAspect"/>
+
+</beans>

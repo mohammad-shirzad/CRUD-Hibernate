@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--suppress HibernateMappingDatasourceDomInspection -->
+<hibernate-mapping package="core.model.dto">
+    <class name="core.model.dto.ContactInfo" table="ContactInfo">
+        <id name="id" type="int" column="Id"/>
+
+        <property name="homeTel" type="java.lang.String" column="HomeTel"/>
+        <property name="homeAddress" type="java.lang.String" column="HomeAddress"/>
+        <property name="mobilePhone" type="java.lang.String" column="MobilePhone"/>
+        <property name="email" type="java.lang.String" column="Email"/>
+        <property name="lastModificationDate" type="java.sql.Date" column="LastModificationDate"/>
+
+    </class>
+</hibernate-mapping>

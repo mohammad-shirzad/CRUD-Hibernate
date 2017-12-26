@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--suppress HibernateMappingDatasourceDomInspection -->
+<hibernate-mapping package="core.model.dto">
+    <class name="core.model.dto.JobInfo" table="JobInfo">
+        <id name="id" type="int" column="Id"/>
+
+        <property name="address" type="java.lang.String" column="Address"/>
+        <property name="telephone" type="java.lang.String" column="Telephone"/>
+        <property name="status" type="int" column="Status"/>
+        <property name="position" type="java.lang.String" column="Position"/>
+        <property name="company" type="java.lang.String" column="Company"/>
+        <property name="lastModificationDate" type="java.sql.Date" column="LastModificationDate"/>
+
+    </class>
+</hibernate-mapping>

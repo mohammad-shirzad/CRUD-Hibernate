@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--suppress HibernateMappingDatasourceDomInspection -->
+<hibernate-mapping package="core.model.dto">
+    <class name="core.model.dto.EducationInfo" table="EducationInfo">
+        <id name="id" type="int" column="Id"/>
+        <property name="school" type="java.lang.String" column="School"/>
+        <property name="major" type="java.lang.String" column="Major"/>
+        <property name="grade" type="int" column="Grade"/>
+        <property name="gpa" type="double" column="gpa"/>
+        <property name="address" type="java.lang.String" column="Address"/>
+        <property name="telephone" type="java.lang.String" column="Telephone"/>
+        <property name="status" type="int" column="Status"/>
+        <property name="dateOfGraduation" type="java.sql.Date" column="DateOfGraduation"/>
+        <property name="lastModificationDate" type="java.sql.Date" column="LastModificationDate"/>
+
+    </class>
+</hibernate-mapping>
