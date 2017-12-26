@@ -10,4 +10,5 @@ Details to this project is as follows:
  4. **Spring 4** to implement beans and aplly dependency injection
  5. **Hibernate 3** to create and manage database connection
  6. **Maven 4** as a build tool
+ 7. **Singleton** pattern in creating Hibernate and Spring Util
  Other clarifications on database tables and columns are mentioned as comments on top of each class 
